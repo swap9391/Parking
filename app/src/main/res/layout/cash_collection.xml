@@ -1,0 +1,218 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1">
+<TableLayout
+    android:id="@+id/tl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <!--
+        * TableLayout is a layout that arranges its children into rows and columns.
+        * A TableLayout consists of a number of TableRow objects, each defining a row.
+        * Each row has zero or more cells.
+        * Each cell can hold one View object.
+        * TableLayout containers do not display border lines for their rows, columns, or cells.
+        * The table has as many columns as the row with the most cells.
+        * A table can leave cells empty. Cells can span columns.
+        * The width of a column is defined by the row with the widest cell in that column.
+        * TableLayout can specify certain columns as shrinkable or stretchable
+          by calling setColumnShrinkable() or setColumnStretchable().
+        * In this example code we generate border for table and its columns, rows and cells.
+    -->
+    <TableRow
+        android:id="@+id/tr_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_row_bg"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_bg"
+            android:paddingRight="10dp"
+            android:text="Vehicle Type"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="IN"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="OUT"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_avl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Avl"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@drawable/table_cell_bg"
+            android:text="Total Collection"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tr_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_row_bg"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_type_2W"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_bg"
+            android:paddingRight="10dp"
+            android:text="Two Wheeler"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_in_2w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_out_2w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_avl_2w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_total_2w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="10dp"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tr_item_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_row_bg"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_4w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_bg"
+            android:paddingRight="10dp"
+            android:text="Four Wheeler  "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_in_4w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_out_4w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_avl_4w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/table_cell_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_total_4w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="00" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tr_total"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_row_last_bg"
+        android:padding="5dp">
+        <!-- layout_span is table column span -->
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_span="5"
+            android:text="Total = 00"
+            android:textStyle="italic" />
+    </TableRow>
+</TableLayout>
+    </ScrollView>
